@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/main">
+
+   <LinearLayout
+       android:id="@+id/header"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       tools:ignore="MissingConstraints">
+
+       <ImageView
+           android:layout_width="50dp"
+           android:layout_height="50dp"
+           android:layout_marginTop="15dp"
+           android:layout_marginLeft="15dp"
+           android:src="@drawable/back">
+
+
+       </ImageView>
+
+
+
+   </LinearLayout>
+
+    <TextView
+        android:id="@+id/first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:text="First Name"
+        >
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/edit1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        tools:ignore="MissingConstraints"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/first"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"/>
+
+    <TextView
+        android:id="@+id/last"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@+id/edit1"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:text="Last Name"
+        >
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/edit2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        tools:ignore="MissingConstraints"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/last"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toBottomOf="@id/main">
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="110dp"
+            android:text="save"
+            >
+
+        </Button>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
